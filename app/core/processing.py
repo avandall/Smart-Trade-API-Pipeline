@@ -1,12 +1,11 @@
 import pandas as pd
 from io import BytesIO
 from typing import Dict, Any
-import config
 from datetime import datetime
 
 
 class DataProcessor:
-    def __init__(self, path = config._file_path):
+    def __init__(self, path:str):
         self.path = path
         self.df = None
     
